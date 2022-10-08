@@ -13,6 +13,10 @@
 		1148620B28F15E6D008386F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148620928F15E6D008386F2 /* Main.storyboard */; };
 		1148620D28F15E6D008386F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1148620C28F15E6D008386F2 /* Assets.xcassets */; };
 		1148621028F15E6D008386F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1148620E28F15E6D008386F2 /* LaunchScreen.storyboard */; };
+		1148621928F16509008386F2 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148621828F16509008386F2 /* CurrentWeatherData.swift */; };
+		1148621B28F16609008386F2 /* CurrentWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148621A28F16609008386F2 /* CurrentWeatherManager.swift */; };
+		1148621D28F16CA8008386F2 /* HourlyWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148621C28F16CA8008386F2 /* HourlyWeatherData.swift */; };
+		1148622028F16E2B008386F2 /* HourlyWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1148621F28F16E2B008386F2 /* HourlyWeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1148620C28F15E6D008386F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1148620F28F15E6D008386F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1148621128F15E6D008386F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1148621828F16509008386F2 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
+		1148621A28F16609008386F2 /* CurrentWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherManager.swift; sourceTree = "<group>"; };
+		1148621C28F16CA8008386F2 /* HourlyWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherData.swift; sourceTree = "<group>"; };
+		1148621F28F16E2B008386F2 /* HourlyWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 		1148620228F15E6D008386F2 /* Weather (Test) */ = {
 			isa = PBXGroup;
 			children = (
+				1148621728F1642E008386F2 /* Model */,
 				1148620328F15E6D008386F2 /* AppDelegate.swift */,
 				1148620528F15E6D008386F2 /* SceneDelegate.swift */,
 				1148620728F15E6D008386F2 /* ViewController.swift */,
@@ -65,6 +74,33 @@
 				1148621128F15E6D008386F2 /* Info.plist */,
 			);
 			path = "Weather (Test)";
+			sourceTree = "<group>";
+		};
+		1148621728F1642E008386F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1148621E28F16E16008386F2 /* Current */,
+				1148622128F16E32008386F2 /* Hourly */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1148621E28F16E16008386F2 /* Current */ = {
+			isa = PBXGroup;
+			children = (
+				1148621828F16509008386F2 /* CurrentWeatherData.swift */,
+				1148621A28F16609008386F2 /* CurrentWeatherManager.swift */,
+			);
+			path = Current;
+			sourceTree = "<group>";
+		};
+		1148622128F16E32008386F2 /* Hourly */ = {
+			isa = PBXGroup;
+			children = (
+				1148621C28F16CA8008386F2 /* HourlyWeatherData.swift */,
+				1148621F28F16E2B008386F2 /* HourlyWeatherManager.swift */,
+			);
+			path = Hourly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1148621928F16509008386F2 /* CurrentWeatherData.swift in Sources */,
 				1148620828F15E6D008386F2 /* ViewController.swift in Sources */,
 				1148620428F15E6D008386F2 /* AppDelegate.swift in Sources */,
 				1148620628F15E6D008386F2 /* SceneDelegate.swift in Sources */,
+				1148622028F16E2B008386F2 /* HourlyWeatherManager.swift in Sources */,
+				1148621B28F16609008386F2 /* CurrentWeatherManager.swift in Sources */,
+				1148621D28F16CA8008386F2 /* HourlyWeatherData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
